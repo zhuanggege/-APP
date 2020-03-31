@@ -23,7 +23,6 @@ public class ContentAdapter extends FragmentPagerAdapter {
     //fragmentManager，Fragment管理
     FragmentManager fragmentManager ;
 
-
     public ContentAdapter(FragmentManager fm,List<Fragment> views) {
         super(fm);
         this.list = views;

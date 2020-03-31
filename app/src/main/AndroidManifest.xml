@@ -27,7 +27,7 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".users.fragment.pager.HomePagerFragment" />
+        <activity android:name=".users.fragment.HomePagerFragment" />
     </application>
 
 </manifest>
