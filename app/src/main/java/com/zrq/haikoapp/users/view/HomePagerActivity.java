@@ -13,7 +13,10 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.zrq.haikoapp.users.adapter.ContentAdapter;
 import com.zrq.haikoapp.R;
-import com.zrq.haikoapp.users.fragment.CarertActivity;
+import com.zrq.haikoapp.users.fragment.CoachPagerFragment;
+import com.zrq.haikoapp.users.fragment.DynamicPagerFragment;
+import com.zrq.haikoapp.users.fragment.HomePagerFragment;
+import com.zrq.haikoapp.users.fragment.UsersPagerFragment;
 import com.zrq.haikoapp.users.ui.PagerFragmentUitl;
 
 import java.util.ArrayList;
@@ -90,31 +93,16 @@ public class HomePagerActivity extends AppCompatActivity implements View.OnClick
         //获取主页中间内容组件
         this.av_center = findViewById(R.id.av_center);
 
-        initFragment();
         //适配器
-        View page_1 = View.inflate(HomePagerActivity.this, R.layout.users_page_01, null);
-        View page_2 = View.inflate(HomePagerActivity.this, R.layout.users_page_02, null);
-        View page_3 = View.inflate(HomePagerActivity.this, R.layout.users_page_03, null);
-        View page_4 = View.inflate(HomePagerActivity.this, R.layout.users_page_04, null);
-
         viewList = new ArrayList<Fragment>();
-        viewList.add(new CarertActivity());
-//        viewList.add(page_2);
-//        viewList.add(page_3);
-//        viewList.add(page_4);
+        viewList.add(new HomePagerFragment());
+        viewList.add(new DynamicPagerFragment());
+        viewList.add(new CoachPagerFragment());
+        viewList.add(new UsersPagerFragment());
 
         this.adapter = new ContentAdapter(getSupportFragmentManager(),viewList);
         //将适配器放进中间内容区
         this.av_center.setAdapter(adapter);
-
-    }
-
-    /**
-     * Fragment配置
-     */
-    private ContentAdapter initFragment() {
-
-        return null;
 
     }
 
