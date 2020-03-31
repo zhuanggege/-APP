@@ -1,4 +1,4 @@
-package com.zrq.haikoapp.users.fragment.pager;
+package com.zrq.haikoapp.users.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,13 +10,13 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.zrq.haikoapp.R;
-
 /**
- * 此类是用户fragment类
+ * 此类是主页fragment类
  * 获取视图view
  * 布局设置
  */
-public class UsersPagerFragment extends Fragment implements View.OnClickListener {
+
+public class HomePagerFragment extends Fragment implements View.OnClickListener {
 
     /**
      * 创建视图
@@ -28,29 +28,29 @@ public class UsersPagerFragment extends Fragment implements View.OnClickListener
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
         View view;
-        view = inflater.inflate(R.layout.users_page_04,null);
+        //获取xml布局
+        view = inflater.inflate(R.layout.users_page_01,null);
 
-        //布局初始化(xml布局视图)
         initview(view);
-
         return view;
     }
 
     /**
-     * 视图初始化
+     * 布局初始化
      * @param view
      */
     private void initview(View view) {
     }
 
+
     /**
-     * 单击事件设置
-     * @param v
+     * 点击事件设置
+     * @param v v.getid();获取view视图的id
      */
     @Override
     public void onClick(View v) {
+
 
     }
 }

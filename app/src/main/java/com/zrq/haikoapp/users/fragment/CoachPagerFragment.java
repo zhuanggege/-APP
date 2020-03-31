@@ -1,4 +1,4 @@
-package com.zrq.haikoapp.users.fragment.pager;
+package com.zrq.haikoapp.users.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
