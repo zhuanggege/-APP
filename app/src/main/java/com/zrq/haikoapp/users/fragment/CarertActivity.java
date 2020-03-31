@@ -12,7 +12,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.zrq.haikoapp.R;
-import com.zrq.haikoapp.users.fragment.pager.HomePagerFragment;
 
 public class CarertActivity extends Fragment implements View.OnClickListener {
 
