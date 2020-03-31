@@ -1,0 +1,2 @@
+毕业设计，自学的android
+本设计是前端是android写，后端是ssm加mysql
